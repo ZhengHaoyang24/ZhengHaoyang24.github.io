@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../公共库/全局js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../公共库/全局css/css.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>历代名医</title>
+</head>
+
+<body>
+<div class="header">
+    <div class="slider slider2"></div>
+    <!--slider1加一个属性就可以定在哪里-->
+    <div class="header_tar">
+        <a href="../../index.html">
+            <div id="bar">
+                <p>首页</p>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="">
+            <div id="bar1">
+                <p>历代名医</p>
+
+                <div id="second1">
+
+                </div>
+            </div>
+        </a>
+
+    </div>
+    <div class="header_tar">
+        <div id="bar2">
+            <p>医史传说</p>
+            <div id="second2">
+                <ul>
+                    <a href="../3.医史传说/医史/index.html">
+                        <li>医史</li>
+                    </a>
+                    <a href="../3.医史传说/传说/index.html">
+                        <li>传说</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="header_tar">
+        <a href="../4.诗句民谣/index.html">
+            <div id="bar3">
+                <p>诗句民谣</p>
+
+                <div id="second3">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="../5.非遗传承/index.html">
+            <div id="bar4">
+                <p>非遗传承</p>
+
+                <div id="second4">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="../6.中医著作/index.html">
+            <div id="bar5">
+                <p>中医著作</p>
+
+                <div id="second5">
+
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+</div>
+
+<div class="content">
+    <section class=sclick>
+        <div class="i1">
+            <p class="name1">扁鹊</p>
+            <img class="img1" src="imgs/1扁鹊综非反转.png" alt=""/>
+        </div>
+        <div class="i2">
+            <p class="name2">董奉</p>
+            <img class="img2" src="imgs/2董奉（人像）（翻转）（饱和度提高）.png" alt=""/>
+        </div>
+        <div class="i3">
+            <p class="name3">华佗</p>
+            <img class="img3" src="imgs/3华佗综非反转.png" alt=""/>
+        </div>
+        <div class="i4">
+            <p class="name4">李时珍</p>
+            <img class="img4" src="imgs/4李时珍.png" alt=""/>
+        </div>
+        <div class="i5">
+            <p class="name5">杨继洲</p>
+            <img class="img5" src="imgs/5杨继洲（人像）（饱和度加深）.png" alt=""/>
+        </div>
+        <div class="i6">
+            <p class="name6">张仲景</p>
+            <img class="img6" src="imgs/6张仲景.png" alt=""/>
+        </div>
+    </section>
+    <div class="content_backgroud"></div>
+</div>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $(".i1").click(function () {
+            $(location).attr('href', 'role.html');
+        })
+        $(".i2").click(function () {
+            $(location).attr('href', 'role.html#role2');
+        })
+        $(".i3").click(function () {
+            $(location).attr('href', 'role.html#role3');
+        })
+        $(".i4").click(function () {
+            $(location).attr('href', 'role.html#role4');
+        })
+        $(".i5").click(function () {
+            $(location).attr('href', 'role.html#role5');
+        })
+        $(".i6").click(function () {
+            $(location).attr('href', 'role.html#role6');
+        })
+
+
+        $("#bar").hover(function () {
+            $(".slider").css("left", "14%");
+        })
+        $("#bar").mouseleave(function () {
+            $(".slider").css("left", "26%");
+        })
+
+        $("#bar1").hover(function () {
+            $(".slider").css("left", "26%");
+        })
+        $("#bar1").mouseleave(function () {
+            $(".slider").css("left", "26%");
+        })
+
+        $("#bar2").hover(function () {
+            $(".slider").css("left", "38%");
+            $("#second2").show();
+        })
+        $("#bar2").mouseleave(function () {
+            $(".slider").css("left", "26%");
+            $("#second2").hide();
+        })
+
+        $("#bar3").hover(function () {
+            $(".slider").css("left", "50%");
+        })
+        $("#bar3").mouseleave(function () {
+            $(".slider").css("left", "26%");
+        })
+
+        $("#bar4").hover(function () {
+            $(".slider").css("left", "62%");
+        })
+        $("#bar4").mouseleave(function () {
+            $(".slider").css("left", "26%");
+        })
+        $("#bar5").hover(function () {
+            $(".slider").css("left", "74%");
+        })
+        $("#bar5").mouseleave(function () {
+            $(".slider").css("left", "26%");
+        })
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.music_btn{
+    margin-left: 20px;
+    z-index: 999;
+    position: absolute;
+    width: 80px;
+    /*height: 110px;*/
+    /*background: #1b6d85;*/
+    bottom: 20px;
+}
+.music_btn div{
+
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 10px;*/
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    background: rgba(196, 111, 36, 0.55);
+}
+.music_btn a{
+    text-decoration: none;
+    color: black;
+}
+.music_btn a div img{
+    width: 40px;
+    height: 40px;
+}

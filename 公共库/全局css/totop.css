@@ -1,0 +1,21 @@
+
+/*回到顶部*/
+.totop_div {
+    user-select: none;
+    /*margin: 0;*/
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border: 1px solid #fae3ca;
+
+    background: rgba(250, 227, 202, 0.25);
+
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fae3ca;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}

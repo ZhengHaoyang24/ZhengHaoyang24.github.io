@@ -1,0 +1,24 @@
+.bottom_button_div {
+    /*background-color: #d2c3b3;*/
+    padding: 5px;
+    bottom: 25px;
+    left: 25px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(210, 195, 179, 0.15);
+}
+
+.bottom_btn{
+    width: auto;
+}
+.bottom_btn img{
+    width: 40px;
+    transition:  all 0.2s;
+    opacity: 0.6;
+}
+.bottom_btn img:hover{
+    opacity: 1;
+}
+
+
+

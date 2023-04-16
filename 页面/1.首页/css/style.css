@@ -1,0 +1,386 @@
+.content {
+    top: 15%;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    /* background-color: #131313; */
+    overflow: hidden;
+}
+
+.slide-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* background:linear-gradient(to right,rgba(255, 65, 109,0.5),rgba(255, 75, 43, 0.5)); */
+
+}
+
+.image-slider img {
+    user-select: none;
+}
+
+.image-slider {
+    /* left: 26%; */
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: 0.7s ease; */
+    animation: text 30s infinite linear;
+    /* background-color: antiquewhite; */
+
+}
+
+.image-slider:hover {
+    animation-play-state: paused;
+}
+
+
+.slide-div {
+    left: 26px;
+    transition: all 30s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -110px 50px 0 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text_up {
+    text-shadow: black 0px 3px 5px;
+
+    transition: all 0.2s;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: KaiTi, Times New Roman, serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    bottom: -14%;
+    position: absolute;
+    color: #f6eae6;
+    display: block;
+}
+
+.text_down {
+    text-shadow: black 0px 3px 5px;
+    transition: all 0.3s;
+    font-family: KaiTi, Times New Roman, serif;
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+    bottom: -32%;
+    display: none;
+    padding: 0 10%;
+}
+
+
+.img {
+
+    /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+    filter: saturate(10%);
+}
+
+
+.button {
+    position: absolute;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    transition: 0.8s;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.button:hover {
+    background-color: rgba(238, 238, 234, 0.2);
+
+}
+
+#slider-span1:target ~ .image-slider #p1 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span1:target ~ .image-slider #p11 {
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1 {
+    /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span2:target ~ .image-slider #p2 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span2:target ~ .image-slider #p22 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span3:target ~ .image-slider #p3 {
+    transition: all 0.9s;
+    font-size: xx-large;
+
+}
+
+#slider-span3:target ~ .image-slider #p33 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span4:target ~ .image-slider #p4 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span4:target ~ .image-slider #p44 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span5:target ~ .image-slider #p5 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span5:target ~ .image-slider #p55 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+#slider-span6:target ~ .image-slider #p6 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span6:target ~ .image-slider #p66 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+#slider-span7:target ~ .image-slider #p7 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span7:target ~ .image-slider #p77 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span8:target ~ .image-slider #p8 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span8:target ~ .image-slider #p88 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span8:target ~ .image-slider #img8,
+#slider-span8:target ~ .image-slider #button-8 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+#slider-span9:target ~ .image-slider #p9 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span9:target ~ .image-slider #p99 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span9:target ~ .image-slider #img9,
+#slider-span9:target ~ .image-slider #button-9 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+#slider-span10:target ~ .image-slider #p10 {
+    transition: all 0.9s;
+    font-size: xx-large;
+}
+
+#slider-span10:target ~ .image-slider #p1010 {
+    transition: all 0.9s;
+    font-size: x-large;
+    display: block;
+}
+
+#slider-span10:target ~ .image-slider #img10,
+#slider-span10:target ~ .image-slider #button-10 {
+    font-size: larger;
+    box-shadow: 0 0 50px 20px #ffffff inset;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span1:target ~ .image-slider {
+    left: 115%;
+    transition: 0.8s;
+}
+
+#slider-span2:target ~ .image-slider {
+    left: 89%;
+    transition: 0.8s;
+}
+
+#slider-span3:target ~ .image-slider {
+    left: 63%;
+    transition: 0.8s;
+}
+
+#slider-span4:target ~ .image-slider {
+    left: 37%;
+    transition: 0.8s;
+}
+
+#slider-span5:target ~ .image-slider {
+    left: 11%;
+    transition: 0.8s;
+}
+
+#slider-span6:target ~ .image-slider {
+    left: -15%;
+    transition: 0.8s;
+}
+
+#slider-span7:target ~ .image-slider {
+    left: -41%;
+    transition: 0.8s;
+}
+
+#slider-span8:target ~ .image-slider {
+    left: -67%;
+    transition: 0.8s;
+}
+
+#slider-span9:target ~ .image-slider {
+    left: -93%;
+    transition: 0.8s;
+}
+
+#slider-span10:target ~ .image-slider {
+    left: -119%;
+    transition: 0.8s;
+}
+

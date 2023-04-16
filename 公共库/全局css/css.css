@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /*
+        background: url("../背景.jpg") no-repeat;
+        background-size: 100% 100%;	 */
+
+    /* border: 1px black solid; */
+    z-index: 999;
+    /*无法被选中*/
+    user-select: none;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+
+}
+
+.header_tar {
+
+
+    /*font-family: "Script MT Bold"!important;*/
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    /* border: 1px black solid; */
+    width: 12%;
+    height: 100%;
+    text-align: center;
+}
+
+#bar, #bar1, #bar2, #bar3, #bar4, #bar5 {
+    margin: 20px 0px;
+
+    /* background-color: white; */
+}
+
+#second, #second1, #second2, #second3, #second4, #second5 {
+    background-color: rgba(166, 142, 109, 0.5);
+    display: none;
+    position: absolute;
+    width: 80%;
+    margin: 0px 10%;
+    font-family: KaiTi,Times New Roman,serif;
+}
+
+.header_tar ul {
+    /*background-color: rgba(153, 137, 112,0.6);*/
+    padding-inline-start: 0px;
+}
+
+.header_tar p {
+    /*font-family: 'Times New Roman', Times, serif;*/
+    /*font-family: 'XiangNanXingShuTi', ui-serif;*/
+
+    font-family: KaiTi,Times New Roman;
+    color: antiquewhite;
+    font-weight: 1000;
+    border-radius: 5%;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+/* .header_tar p:hover{
+    background-color: rgb(123, 177, 224);
+}
+
+.header_tar p:active{
+    background-color: rgb(69, 157, 235);
+} */
+.header_tar li {
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    font-weight: 1000;
+    padding: 10px 0;
+    list-style: none;
+    /* border: 1px solid black; */
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+.header_tar a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.header_tar li:hover {
+    background-color: rgba(166, 142, 109, 0.5);
+}
+
+/* .header_tar li:active{
+    background-color: rgb(149, 134, 108);
+} */
+.slider {
+    margin: 20px 0;
+    border-radius: 7%;
+    padding: 20px 0;
+    position: absolute;
+    width: 12%;
+    left: 14%;
+    background-color: rgba(166, 142, 109, 0.5);
+    transition: all ease 0.4s;
+    animation: 2s ease-in-out infinite;
+    z-index: 1;
+}
+
+.slider2 {
+    left: 26%;
+}
+
+.slider3 {
+    left: 38%;
+}
+
+.slider4 {
+    left: 50%;
+}
+
+.slider5 {
+    left: 62%;
+}
+
+.slider6 {
+    left: 74%;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(rgba(45, 28, 16, 0.75), rgba(115, 97, 66, 0.19)), url('../全局imgs/清明上河图卷全局背景.jpg'), no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*内嵌页导航*/
+.
+

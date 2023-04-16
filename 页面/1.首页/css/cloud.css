@@ -1,0 +1,70 @@
+.background_png {
+    /* padding-left: 11%; */
+    top: 15%;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    /* background-color: rgba(165, 42, 42, 0.352); */
+    background: url("../imgs/DM_20230331214936_009.PNG");
+    background-size: 100% 100%;
+    z-index: -3;
+    opacity: 0.4;
+    animation: apprence 5s 1 linear;
+    /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    /* box-shadow: 0px 0px 40px 20px rgba(128, 86, 28, 1); */
+}
+
+.L_to_R {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    width: 50%;
+    /*由left.PNG更改为updateyun.png*/
+    background: url("../imgs/updateyun.png");
+    background-size: 100% 100%;
+    opacity: 1.7;
+    animation: move_R 15s infinite linear;
+}
+
+.R_to_L {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background: url("../imgs/right.PNG");
+    background-size: 100% 100%;
+    right: 0px;
+    opacity:0.5;
+    animation: move_L 24s infinite linear;
+}
+
+@keyframes move_R{
+    0%{
+        left: -50%;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes move_L{
+    0%{
+        left: -50%;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes apprence{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0.4;
+    }
+}

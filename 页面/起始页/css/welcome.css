@@ -1,0 +1,278 @@
+/*
+主调颜色 #dcc8a3
+
+*/
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #dcc8a3;
+}
+
+.block {
+
+}
+
+/*顶部最大标题div*/
+.title_big {
+user-select: none;
+    cursor: default;
+    padding-bottom: 120px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(231, 173, 96, 0.44), 60% , #dcc8a3 );
+
+}
+
+/*右平移div*/
+.move_x_title_div {
+    color: saddlebrown;
+    font-size: 3em;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation: moveX_1 0.6s linear 1;
+}
+
+/*中间介绍div*/
+.text_introduce_top {
+    font-weight: 500;
+    padding: 9px;
+    font-size: 1.2em;
+    color: #573112;
+    display: flex;
+    justify-content: center;
+    animation: fadenum 1.4s 1;
+}
+
+/*进入网站div*/
+.move_x_enter_div {
+    user-select: none;
+    /*border: 1px red solid;*/
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation: moveX_2 0.6s linear 1;
+}
+
+.move_x_enter_div a {
+    text-align: center;
+    display: inline-flex;
+    /*justify-content: center;*/
+    border-radius: 5px;
+    padding: 10px;
+    /*border: 1px red solid;*/
+    color: #150c05;
+    text-decoration: none;
+    background: rgba(148, 113, 63, 0.56);
+    box-shadow: 0 0 2px 2px rgba(138, 68, 19, 0.51);
+    transition: all 0.3s;
+}
+
+.move_x_enter_div img {
+    display: inline-flex;
+    width: 20px;
+}
+
+.move_x_enter_div a:hover {
+    background: rgb(162, 131, 92);
+}
+
+/*团队名字div*/
+.team_name_div {
+    overflow: hidden;
+    cursor: default;
+    font-size: 1.2em;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid saddlebrown;
+    border-bottom: 1px solid saddlebrown;
+    color: #573112;
+}
+
+.class_introduce{
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+/*介绍内容 div*/
+.intro_container_div {
+    position: relative;
+
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 5%;
+    background: linear-gradient(rgba(45, 28, 16, 0.55), rgba(115, 97, 66, 0.08)), url('../../../公共库/全局imgs/清明上河图卷全局背景.jpg'), no-repeat;
+    user-select: none;
+    cursor: default;
+
+    display: inline-flex;
+    justify-content: center;
+    /*width: 100%;*/
+    padding-top: 90px;
+    padding-bottom: 90px;
+    /*transition: all 0.3s;*/
+}
+.intro_container_div:hover{
+    background: linear-gradient(rgba(45, 28, 16, 0.75), rgba(115, 97, 66, 0.19)), url('../../../公共库/全局imgs/清明上河图卷全局背景.jpg'), no-repeat;
+    /*scale: revert;*/
+}
+
+.intro_jianjie_div {
+
+
+    width: 80%;
+    /*border: 1px red solid;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+/*三个简介*/
+.three_intro {
+    width: 200px;
+}
+
+.three_intro > h5 {
+    /*color: #261507;*/
+    color: #dac6a2;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+}
+
+.three_intro > h6 {
+    color: #dac6a2;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 10px;
+}
+
+
+
+/*介绍页面内容*/
+.intro_index_content{
+    cursor: default;
+    /*padding-top: 90px;*/
+    padding-bottom: 90px;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+
+
+}
+/*首页介绍*/
+.shouye_intro_div{
+display: flex;
+    justify-content: space-around;
+    width: 85%;
+    /*border: 1px red solid;*/
+}
+.index_img{
+    user-select: none;
+    width: 500px;
+    transition: scale 0.2s;
+}
+.index_img:hover{
+    scale: 1.05;
+}
+.index_img>img{
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 9px #000000);
+    width: 100%;
+}
+.shouye_intro_text_div{
+    margin: auto 0;
+    text-align: center;
+    width: 400px;
+
+}
+.shouye_intro_text_div>h3{
+    font-size: 1.5em;
+    color: #3a1201;
+}
+.shouye_intro_simple_text{
+
+}
+
+.huoban_div{
+    padding: 70px;
+    width: 100%;
+    background: #dfbd87;
+    color: #3a1201;
+}
+.huoban_div h4{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadenum {
+    0% {
+        /*transform: rotate(0deg);*/
+        opacity: 0;
+
+    }
+    50% {
+        /*transform: rotate(0deg);*/
+        opacity: 0.8;
+
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes moveX_1 {
+    0% {
+        /*transform: rotate(0deg);*/
+        translate: -100%;
+    }
+    100% {
+        translate: 0;
+    }
+
+}
+
+@keyframes moveX_2 {
+    0% {
+        /*transform: rotate(0deg);*/
+        translate: 100%;
+    }
+    100% {
+        translate: 0;
+    }
+
+}
