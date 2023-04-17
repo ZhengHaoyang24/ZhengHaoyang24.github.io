@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
 <div class="header">
     <div class="slider slider2"></div>
     <!--slider1加一个属性就可以定在哪里-->
@@ -23,37 +24,28 @@
         </a>
     </div>
     <div class="header_tar">
-        <a href="">
+        <a href="#">
             <div id="bar1">
                 <p>历代名医</p>
-
                 <div id="second1">
 
                 </div>
             </div>
         </a>
-
     </div>
     <div class="header_tar">
-        <div id="bar2">
-            <p>医史传说</p>
-            <div id="second2">
-                <ul>
-                    <a href="../3.医史传说/医史/index.html">
-                        <li>医史</li>
-                    </a>
-                    <a href="../3.医史传说/传说/index.html">
-                        <li>传说</li>
-                    </a>
-                </ul>
+        <a href="../3.中医著作/index.html">
+            <div id="bar2">
+                <p>中医著作</p>
+                <div id="second2">
+                </div>
             </div>
-        </div>
-
+        </a>
     </div>
     <div class="header_tar">
-        <a href="../4.诗句民谣/index.html">
+        <a href="../4.非遗传承/index.html">
             <div id="bar3">
-                <p>诗句民谣</p>
+                <p>非遗传承</p>
 
                 <div id="second3">
 
@@ -62,9 +54,9 @@
         </a>
     </div>
     <div class="header_tar">
-        <a href="../5.非遗传承/index.html">
+        <a href="../5.诗句民谣/index.html">
             <div id="bar4">
-                <p>非遗传承</p>
+                <p>诗句民谣</p>
 
                 <div id="second4">
 
@@ -73,16 +65,17 @@
         </a>
     </div>
     <div class="header_tar">
-        <a href="../6.中医著作/index.html">
+        <a href="../6.趣味答题/ceshi.html">
             <div id="bar5">
-                <p>中医著作</p>
-
+                <p>趣味答题</p>
                 <div id="second5">
-
                 </div>
             </div>
         </a>
     </div>
+
+
+
 
 
 </div>
@@ -156,11 +149,11 @@
 
         $("#bar2").hover(function () {
             $(".slider").css("left", "38%");
-            $("#second2").show();
+
         })
         $("#bar2").mouseleave(function () {
             $(".slider").css("left", "26%");
-            $("#second2").hide();
+
         })
 
         $("#bar3").hover(function () {
@@ -178,9 +171,11 @@
         })
         $("#bar5").hover(function () {
             $(".slider").css("left", "74%");
+            $("#second5").show();
         })
         $("#bar5").mouseleave(function () {
             $(".slider").css("left", "26%");
+            $("#second5").hide();
         })
     });
 </script>

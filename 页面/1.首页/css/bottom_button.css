@@ -1,11 +1,13 @@
 .bottom_button_div {
     /*background-color: #d2c3b3;*/
     padding: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
     bottom: 25px;
     left: 25px;
     position: absolute;
     border-radius: 5px;
-    background-color: rgba(210, 195, 179, 0.15);
+    background-color: rgba(210, 195, 179, 0.39);
 }
 
 .bottom_btn{
@@ -14,7 +16,7 @@
 .bottom_btn img{
     width: 40px;
     transition:  all 0.2s;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 .bottom_btn img:hover{
     opacity: 1;

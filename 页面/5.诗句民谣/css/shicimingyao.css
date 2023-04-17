@@ -1,0 +1,418 @@
+/*隐藏进度条*/
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+
+/*导航*/
+.navi_poem_div {
+    /*无法被选中*/
+    user-select: none;
+
+    cursor: pointer;
+    border-radius: 5px;
+    padding:4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 235, 215, 0.56);
+    width: auto;
+    /*display: flex;*/
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.navi_poem_div div {
+    background: rgba(250, 235, 215, 0.15);
+    color: #333333;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin: 5px;
+    height: 30px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navi_poem_div div:hover {
+    background: rgba(250, 235, 215, 0.6);
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+/*诗歌*/
+.poems_div {
+
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(250, 235, 215, 0.15);
+    border-radius: 20px;
+    /*height: 700px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+/*第一首诗歌*/
+.poems_div_content_1 {
+    cursor: default;
+    border-radius: 10px;
+
+    background: rgba(250, 235, 215, 0.2);
+    /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poems_div_content_1:hover {
+    box-shadow: 3px 3px 10px 10px rgba(26, 20, 12, 0.4);
+}
+
+/*词 内容*/
+.poems_content_1_div {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 40px;
+    /*width: 100%;*/
+    background: rgba(250, 235, 215, 0.1);
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*栏目大标题*/
+.poem_big_title {
+    color: #d3c6b5;
+}
+
+/*内容小标题*/
+.introduce_small_title {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 10px;
+    color: bisque;
+    /*text-shadow: 1px 1px 2px black;*/
+}
+
+/*关键字效果*/
+.poems_content_key_word {
+    font-size: 1.6em;
+    color: #e5b39c;
+}
+
+/*诗歌内容*/
+.poems_content_h {
+    padding: 0;
+    text-shadow: 1px 1px 9px black;
+    text-align: center;
+    color: #f5d5bf;
+
+}
+
+/*诗歌解释*/
+.poem_state_h {
+
+    padding: 0;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 20px;
+    color: #f8e9d5;
+}
+
+/*植物解释 div*/
+.poem_plant_introduce_div {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    transition: all 0.2s;
+}
+.poem_plant_introduce_div:hover {
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+/*介绍文字h3*/
+.introduce_content_h {
+    width: 100%;
+    color: #f8e9d5;
+    text-shadow: 1px 1px 2px black;
+}
+.introduce_content_h>ul li{
+    list-style-type: circle;
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+
+.introduce_content_h_key_word {
+    font-size: 1.5em;
+    color: #f8d1ab;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+/*蒿药介绍*/
+.poem_plant_introduce_haoyao_div {
+
+    position: relative;
+    margin-top: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    transition: all 0.3s;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.poem_plant_introduce_haoyao_div:hover{
+    border-bottom: 2px solid rgba(236, 192, 149, 0.59);
+    transition: all 0.3s;
+}
+.introduce_content_poem{
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    transition: all 0.3s;
+    width: 100%;
+    /*height: 100px;*/
+    /*display: inline-flex;*/
+    /*margin: 10px 0px 0px 10px;*/
+    border: 2px solid rgba(96, 96, 96, 0);
+
+}
+/*植物图片*/
+.plant_image_div{
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    transition: all 0.3s;
+    /*display: none;*/
+    width: 300px;
+    height: 200px;
+    /*border: 1px solid rebeccapurple;*/
+}
+.plant_image_div>img{
+    text-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    transition: all 0.3s;
+}
+.introduce_content_poem:hover {
+    border-radius: 5px;
+    padding: 3px;
+    /*border: 2px solid rgb(93, 62, 39);*/
+    transition: all 0.3s;
+}
+.introduce_content_poem:hover .plant_image_div>img{
+    transition: all 0.3s;
+    display: block;
+    width: 85%;
+    height: 85%;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+    /*歌词*/
+.shige_content_div {
+
+    cursor: default;
+    border-radius: 20px;
+    padding-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /*padding-bottom: 50px;*/
+    background: rgba(250, 235, 215, 0.15);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    /*bottom: 0;*/
+}
+
+
+.shige_title {
+    /*margin-left: 5%;*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.shige_title > h1 {
+    font-weight: 600;
+    font-size: 2.2em;
+    color: #fae3ca;
+    font-family: "Microsoft YaHei UI", Times, serif;;
+}
+
+/*作者及其歌词*/
+.shige_content {
+
+    padding-top: 10px;
+    /*padding-left: 10%;*/
+    /*align-content: center;*/
+}
+
+/*歌词div*/
+.geci_div {
+    text-align: center;
+    margin-top: 30px;
+    width: 60%;
+    /*margin-left: 10%*/
+}
+
+
+.shige_content h3 {
+    color: #d2c3b3;
+    font-weight: 600;
+}
+
+.shige_content h5 {
+    padding: 1px;
+    font-weight: 600;
+    font-size: 1em;
+    color: #d2c3b3;
+    /*font-weight: 400;*/
+
+}
+
+
+.button_ {
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px antiquewhite solid;
+    color: antiquewhite;
+    background: none;
+}
+
+
+/*回到顶部*/
+.totop_div {
+    /*margin: 0;*/
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border: 1px solid #fae3ca;
+
+    background: rgba(250, 227, 202, 0.25);
+
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fae3ca;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/*歌词div*/
+.geci_content_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.geci_content_div li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.geci_content_div li.on {
+    /*background-image: -webkit-linear-gradient(right, red, blue);*/
+    background-image: -webkit-linear-gradient(right, rgba(255, 153, 0, 0.76), rgba(250, 126, 73, 0.71));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.geci_content_div li p {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 7px;
+    font-family: "Microsoft YaHei UI", Times, serif;;
+    color: rgba(250, 227, 202, 0.86);
+}
+
+
+.border_effects {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    /*color: #ff0000;*/
+    /*border: 2px solid gold;*/
+
+    transition: all 6s;
+
+}
+
+.border_effects::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 1px solid #e5b790;
+    /*border-radius: 10px;*/
+    animation: div5Ani 7s infinite linear;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.border_effects::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 1px solid #797574;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    animation: div5Ani 8s infinite linear;
+
+}
+
+@keyframes div5Ani {
+    0%,
+    100% {
+        clip-path: inset(0 0 98% 0);
+    }
+
+    25% {
+        clip-path: inset(0 98% 0 0);
+    }
+    50% {
+        clip-path: inset(98% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 98%);
+    }
+}
+
+.div5::after {
+    animation: div5Ani 6s infinite -3.5s linear;
+}
+
+
+
+
+
+
+
+
+

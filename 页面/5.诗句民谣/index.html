@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../公共库/全局js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../公共库/全局css/css.css"/>
+    <script src="js/vue.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/shicimingyao.css"/>
+    <link rel="stylesheet" type="text/css" href="../../公共库/全局css/totop.css"/>
+
+
+    <title>水平</title>
+</head>
+
+<body>
+<div class="header">
+    <div class="slider slider5"></div>
+    <!--slider1加一个属性就可以定在哪里-->
+    <div class="header_tar">
+        <a href="../../index.html">
+            <div id="bar">
+                <p>首页</p>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="../2.历代名医/index.html">
+            <div id="bar1">
+                <p>历代名医</p>
+                <div id="second1">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="../3.中医著作/index.html">
+            <div id="bar2">
+                <p>中医著作</p>
+                <div id="second2">
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="../4.非遗传承/index.html">
+            <div id="bar3">
+                <p>非遗传承</p>
+
+                <div id="second3">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="#">
+            <div id="bar4">
+                <p>诗句民谣</p>
+
+                <div id="second4">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="header_tar">
+        <a href="../6.趣味答题/ceshi.html">
+            <div id="bar5">
+                <p>趣味答题</p>
+                <div id="second5">
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+</div>
+<div class="content">
+    <!--三条导航栏-->
+    <div class="navi_poem_div">
+        <img style="width: 20px;height: 20px;align-items: center;" src="imgs/锚点.png">
+        <div onclick="scrollToViewA1()">诗中的蒿药</div>
+
+        <div onclick="scrollToViewA2()">诗中的泽泻</div>
+        <div onclick="scrollToViewA3()">歌谣</div>
+    </div>
+    <!--第一首诗歌-->
+    <div class="poems_div" style="margin-top: 50px" id="A1">
+        <div style="display: flex;padding: 20px">
+            <img style="width: 30px" src="imgs/标题叶子d3c6b5.png">
+            <h1 class="poem_big_title">诗中的蒿药</h1>
+        </div>
+        <div class="poems_div_content_1">
+            <div class="poems_content_1_div">
+                <h2 class="poems_content_h">于以采<span class="poems_content_key_word">蘩</span>，于沼于沚。于以用之，公侯之事。
+                </h2>
+                <h3 class="poem_state_h"><img style="width: 18px;display: inline-block" src="imgs/解释.png">：这是《诗经·召南·采蘩》的第一章，
+                    描写为公候采摘蘩蒿的情景。古人将草之高者称为蒿，《诗经》中的蒿类植物有蘩、蒌、萧、艾、蓬、蓍、苹、蒿、芩、莪、蔚等，它们或是味美的蔬菜，或是祭祀的贡品，或是治病的良药。</h3>
+            </div>
+
+            <!--介绍信息-->
+            <!--蒌蒿-->
+            <div class="poem_plant_introduce_haoyao_div">
+                <div class="introduce_small_title">
+                    <img style="width: 20px;padding-right: 3px" src="imgs/介绍小标题.png">
+                    <h2 class="poem_small_title">蒌蒿</h2>
+                </div>
+                <div class="introduce_content_poem">
+                    <h3 class="introduce_content_h">
+                        <ul>
+                            <li>“翘翘错薪，言刈其<span class="introduce_content_h_key_word">蒌</span>。之子于归，言秣其驹。”（《周南·汉广》）薪柴众多杂又乱，割下蒌蒿放身边。这位姑娘要出嫁，我喂马驹忙不迭。
+                                诗中的蒌，为菊科蒿属植物蒌蒿。蒌蒿又名芦蒿，多生于河湖岸边与沼泽地带，气味清香，嫩茎叶可作为蔬菜。
+                            </li>
+                            <li>“竹外桃花三两枝，春江水暖鸭先知。<span class="introduce_content_h_key_word">蒌蒿</span>满地芦芽短，正是河豚欲上时。”（苏轼《惠崇春江晚景二首其一》）蒌蒿可解河豚之毒，
+                                古人常将蒌蒿和河豚搭配食用，南宋辛弃疾《蒌蒿宜作河豚羹》曰：“河豚挟鸩毒，杀人一脔足。蒌蒿或济之，赤心置人腹。”蒌蒿还可以全草入药，具有利膈开胃的功效，可治疗食欲不振。
+                            </li>
+                        </ul>
+                    </h3>
+                    <div class="plant_image_div">
+                        <img src="imgs/蒌蒿.png">
+                    </div>
+                </div>
+
+
+            </div>
+            <!--白蒿-->
+            <div class="poem_plant_introduce_haoyao_div">
+                <div class="introduce_small_title">
+                    <img style="width: 20px;padding-right: 3px" src="imgs/介绍小标题.png">
+                    <h2 class="poem_small_title">白蒿</h2>
+                </div>
+                <div class="introduce_content_poem">
+                    <h3 class="introduce_content_h">
+                        <ul>
+                            <li>“春日迟迟，卉木萋萋。仓庚喈喈，采<span class="introduce_content_h_key_word">蘩</span>祁祁。”（节选自《小雅·出车》）春风拂面日迟迟，草木茂盛叶萋萋。黄鹂鸣叫声喈喈，姑娘采蘩忙祁祁。
+                                诗中的蘩，为菊科蒿属植物大籽蒿。大籽蒿的茎枝有灰白色微柔毛，故名白蒿。
+                            </li>
+                            <li>
+                                白蒿嫩苗也可食用，《本草纲目》引《诗疏》云：“今<span class="introduce_content_h_key_word">白蒿</span>先诸草发生，香美可食，生蒸皆宜。”
+                            </li>
+
+                        </ul>
+                    </h3>
+                    <div class="plant_image_div">
+                        <img src="imgs/白蒿2.png">
+                    </div>
+                </div>
+
+
+            </div>
+            <!--杜蒿-->
+            <div class="poem_plant_introduce_haoyao_div">
+                <div class="introduce_small_title">
+                    <img style="width: 20px;padding-right: 3px" src="imgs/介绍小标题.png">
+                    <h2 class="poem_small_title">杜蒿</h2>
+                </div>
+                <div class="introduce_content_poem">
+                    <h3 class="introduce_content_h">
+                        <ul>
+                            <li>“蓼蓼者莪，匪莪伊<span class="poems_content_key_word">蔚</span>。哀哀父母，生我劳瘁。”（节选自《小雅·蓼莪》）高高大大抱娘蒿，不是莪蒿是蔚蒿。我的父母真可怜，
+                                育我累病受苦劳。诗中的蔚，为菊科蒿属植物牡蒿。
+                            </li>
+                            <li>
+                                牡蒿因种子极为细小而得名，《本草纲目》载：“<span class="poems_content_key_word">蔚</span>，牡菣，蒿之无子者。则牡之名以此也。”
+                            </li>
+                            <li>“聿当霜霰候，<span class="poems_content_key_word">蔚</span>有春阳姿。道心与之然，把玩恒自怡。”（明代朱浙《题晚斋卷》）牡蒿以全草入药，具有清热、凉血、解毒的功效，用于肺结核潮热、小儿
+                                疳热、黄疸型肝炎、丹毒、毒蛇咬伤的治疗。</li>
+
+                        </ul>
+                    </h3>
+                    <div class="plant_image_div">
+                        <img src="imgs/杜蒿.png">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--第二首诗歌-->
+    <div class="poems_div" id="A2">
+        <div style="display: flex;padding: 20px">
+            <img style="width: 30px" src="imgs/标题叶子d3c6b5.png">
+            <h1 class="poem_big_title">诗中的泽泻</h1>
+        </div>
+
+        <!--第一首诗歌-->
+        <div class="poems_div_content_1">
+            <!--诗歌内容及其介绍-->
+            <!--            <div class="border_effects">-->
+            <div class="poems_content_1_div">
+
+                <h2 class="poems_content_h">彼汾一曲，言采其<span class="poems_content_key_word">藚</span>。彼其之子，美如玉。美如玉，殊异乎公族。
+                </h2>
+                <h3 class="poem_state_h"><img style="width: 18px;display: inline-block" src="imgs/解释.png">：这是《诗经·魏风·汾沮洳》的第三章，以采摘藚草起兴，赞美意中人面如冠玉、身轻体健，诗中的藚，便是植物泽泻。
+                    《神农本草经》载，久服泽泻，“耳目聪明，不饥，延年轻身，面生光，能行水上”，故诗中对男子有“美如玉”之赞。</h3>
+            </div>
+            <!--            </div>-->
+
+            <!--介绍信息-->
+            <div class="poem_plant_introduce_div">
+                <!--小标题-->
+                <div class="introduce_small_title">
+                    <img style="width: 20px;padding-right: 3px" src="imgs/介绍小标题.png">
+                    <h2 class="poem_small_title">因能利水得芳名</h2>
+                </div>
+                <h3 class="introduce_content_h">
+
+                    <ul>
+                        <li>《本草正义》载：“<span class="introduce_content_h_key_word">泽泻</span>产于水中，气味淡泊，而体质又轻，故最善渗泄水道，专能通行小便。”
+                            泽泻之名，即来源于其能泻水。
+                        </li>
+                        <li>西汉刘向《九叹·怨思》曰：“筐<span class="introduce_content_h_key_word">泽泻</span>以豹鞟兮，破荆和以继筑。时溷浊犹未清兮，世殽乱犹未察。
+                            ”
+                            可见当时人们已广泛使用泽泻这个名称，并基本掌握了其药性。
+                        </li>
+                        <li>
+                            “<span class="introduce_content_h_key_word">泽泻</span>甘寒，消肿止渴，除湿通淋，阴汗自遏。”（明代龚廷贤《药性歌括四百味·泽泻》）
+                            脾恶湿喜燥，泽泻因能利水而通利脾胃，脾健则肌肉充而肥健；水气除则脏安而气生，故泽泻能养五脏、益气力。正是由于这些原因，古人认为泽泻功效可与灵芝媲美，称其为泽芝。
+                        </li>
+                        <li>
+                            《神农本草经》将泽泻列为上品，载其：“主风寒湿痹，乳难，消水，养五脏，益气力，肥健。”泽泻又名水泻、鹄泻、及泻等，也来源于其利水功效。
+                        </li>
+                    </ul>
+                </h3>
+
+                <div class="introduce_small_title" style="padding-top: 20px">
+                    <img style="width: 20px;padding-right: 3px" src="imgs/介绍小标题.png">
+                    <h2 class="poem_small_title">除湿泄热降血脂</h2>
+                </div>
+
+                <h3 class="introduce_content_h">
+
+                    <ul>
+                        <li>“命名<span class="introduce_content_h_key_word">泽泻</span>不须疑，利水通淋效可知。六味去邪才有路，五苓通塞已无堤。湿疮岂虑能留肾，泄痢何愁更在脾。
+                            若是目昏虚太甚，莫教一泻更无遗”。（清代赵瑾叔《本草诗·泽泻》）泽泻以根块入药，是常用的利水渗湿类中药，具有利水渗湿、泄热通淋、化浊降脂的功效。
+                        </li>
+                        <li>“<span class="introduce_content_h_key_word">泽泻</span>甘寒水喜消，补虚止泻利三焦。疝疼脚气兼痰饮，肿胀遗淋尽可调。”（清代王如鉴《本草约编·泽泻》）
+                            泽泻性寒，既能清膀胱之热，又能泄肾经之虚火，故下焦湿热者尤为适宜，配伍木通、车前子等，可治疗湿热蕴结之热淋涩痛。
+                        </li>
+                        <li>
+                            “<span class="introduce_content_h_key_word">泽泻</span>甘咸泻水浮，止渴泄善通淋溲，治痞除痹肾风疥，
+                            下乳催生亦可求。”（明代李梴《医学入门·泽泻》）泽泻淡渗性寒，肾虚精滑无湿热者禁服。
+                        </li>
+                        <li>
+                            “<span class="introduce_content_h_key_word">泽泻</span>池塘灌药畦，太清云黯步红霓。松花炼鼎龙山侧，甲第群仙凤鹤栖。”（节选自宋代赵光义《逍遥咏》）泽泻的叶和果实也可入药。
+                        </li>
+                    </ul>
+                </h3>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--第三首诗歌-->
+    <div class="shige_content_div" id="A3">
+
+        <div class="shige_title">
+            <h1>防治诺如.元气满满 歌谣</h1>
+            <button class="button_" id="bf" onclick="bf();">播放</button>
+            <!--            <button onclick="rbf();">重新播放</button>-->
+            <audio loop preload="metadata" id='enter'>
+                <source src="video/《防治诺如%20元气满满》歌谣.mp3" type="audio/mpeg">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+        <div class="shige_content">
+            <div style="display: flex;width: 100%;justify-content: space-around;">
+                <div>
+                    <h3>作词：闫金莉</h3>
+                    <h3>作曲：杨京文</h3>
+                    <h3>唱演：人大附小中医志愿者</h3>
+                </div>
+            </div>
+            <div class="geci_content_div">
+                <ul id="lrclist">
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div style="display: flex;justify-content: center;border-top: 1px  solid wheat ;margin-left: 60px;margin-right: 60px;height: 100px;margin-top: 50px">
+            <h4 style="margin: auto 0;color: wheat;font-weight: 300">没有更多了</h4>
+        </div>
+
+    </div>
+
+
+    <!--回到顶部-->
+    <div id="toTop" class="totop_div">
+        <h6>回到</h6>
+        <h6>顶部</h6>
+    </div>
+
+
+</div>
+<script>
+
+
+    /*定位导航栏*/
+    function scrollToViewA1() {
+        document.getElementById('A1').scrollIntoView({
+            block: 'start',
+            inline: 'nearest',
+            behavior:"smooth"
+
+        })
+    }
+    function scrollToViewA2() {
+
+        document.getElementById('A2').scrollIntoView({
+            block: 'start',
+            inline: 'nearest',
+            behavior: 'smooth'
+        })
+    }
+    function scrollToViewA3() {
+        document.getElementById("A3").scrollIntoView({
+            block: 'start',
+            inline: 'nearest',
+            behavior: 'smooth'
+        })
+    }
+
+
+
+    /*歌词*/
+    var lrcJSON = {
+        "[00:00.00]": "",
+        "[00:01.00]": "食饮有节 食饮有节",
+        "[00:06.00]": "起居有常 起居有常",
+        "[00:10.50]": "精神内守 精神内守",
+        "[00:15.00]": "病安从来 病安从来",
+        "[00:59.60]": "啦啦啦啦啦啦啦啦啦啦啦啦",
+        "[01:03.00]": "啦啦啦啦啦啦啦角徵宫商羽",
+        "[01:06.00]": "啦啦啦啦啦啦啦啦啦啦啦啦",
+        "[01:10.00]": "啦啦啦啦啦啦啦角徵宫商羽",
+        "[01:28.00]": "正气存内邪不可干",
+        "[01:31.00]": "防治诺如并不难",
+        "[01:35.00]": "按揉合谷位于虎口",
+        "[01:38.60]": "去除肠火给点赞",
+        "[01:41.50]": "左右各一 方法简单",
+        "[01:45.50]": "配念五音不偷懒",
+        "[01:49.00]": "揉腹透热 温阳祛寒",
+        "[01:52.00]": "手放肚脐来划圈",
+        "[01:56.00]": "叩打双膝 健脾和胃",
+        "[01:59.00]": "增强免疫 身心安",
+        "[02:03.50]": "搓擦劳宫 不忘透热",
+        "[02:07.00]": "感受能量元气满",
+        "[02:10.00]": "啦啦啦啦啦啦啦啦啦啦啦啦",
+        "[02:14.00]": "啦啦啦啦啦啦啦角徵宫商羽",
+        "[02:18.00]": "啦啦啦啦啦啦啦啦啦啦啦啦",
+        "[02:21.00]": "啦啦啦啦啦啦啦角徵宫商羽",
+        "[02:39.00]": "按揉合谷叩双膝",
+        "[02:42.50]": "揉腹透热病自医",
+        "[02:46.00]": " 正气存内邪不可干",
+        "[02:49.60]": "防治诺如元气满满",
+        "[02:53.00]": "按揉合谷叩双膝",
+        "[02:55.70]": "揉腹透热病自医",
+        "[03:00.00]": " 正气存内邪不可干",
+        "[03:04.00]": "防治诺如元气满满"
+    }
+    var lrcTime = [];//歌词对应的时间数组
+    var ul = document.getElementById('lrclist');//获取ul
+
+    var i = 0;
+    for (const key in lrcJSON) {
+        if (lrcJSON.hasOwnProperty(key)) {
+            var value = lrcJSON[key];
+            lrcTime[i++] = parseFloat((parseFloat(key.substr(1, 3)) * 60 + parseFloat(key.substring(4, 10))).toFixed(1));//00:00.000转化为00.000格式
+            ul.innerHTML += "<li><p>" + lrcJSON[key] + "</p></li>";//ul里填充歌词
+        }
+    }
+    lrcTime[lrcTime.length] = lrcTime[lrcTime.length - 1] + 3;//如不另加一个结束时间，到最后歌词滚动不到最后句
+    var $li = ul.getElementsByTagName('li');//获取所有li
+    var currentLine = 0;//当前播放到哪一句了
+    var currentTime;    //当前播放的时间
+    var ppxx;//保存ul的translateY值
+    var bgm = document.getElementById('enter');
+
+    window.onload = function () {
+        bgm.addEventListener('timeupdate', function (e) {
+            currentTime = bgm.currentTime;
+            for (j = currentLine, len = lrcTime.length; j < len; j++) {
+                if (currentTime < lrcTime[j + 1] && currentTime > lrcTime[j]) {
+                    currentLine = j;
+                    if (currentLine > 0) {
+                        $li[currentLine - 1].setAttribute("class", "");
+                        $li[currentLine].setAttribute("class", "on");
+                    }
+                    break;
+                }
+            }
+        })
+        //  audio进度更改后事件
+        audio.onseeked = function () {
+            currentTime = bgm.currentTime;
+            $li[currentLine - 1].setAttribute("class", "");
+            for (k = 0, len = lrcTime.length; k < len; k++) {
+                if (currentTime < lrcTime[k + 1] && currentTime < lrcTime[k]) {
+                    currentLine = k;
+                    break;
+                }
+            }
+        };
+    }
+
+    /*播放*/
+    function play() {
+        bgm.play();
+    }
+
+    /*暂停*/
+    function over() {
+        bgm.pause();
+    }
+
+    function bf() {
+        var bf = document.getElementById("bf");
+        if (bgm.paused) {
+            play();// 播放
+            bf.innerText = "暂停";
+        } else {
+            over(); // 暂停
+            bf.innerText = "播放";
+        }
+    }
+
+    /*出现回到顶部按钮*/
+    $(".totop_div").hide();
+    $(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $(".totop_div").fadeIn(500);
+            } else {
+                $(".totop_div").fadeOut(500);
+            }
+        });
+
+        $("#totop_div").click(function () {
+            $('body,html').animate({scrollTop: 0}, 100);
+            return false;
+        });
+    });
+
+    /*回到顶部*/
+    let divtop = document.getElementsByClassName("totop_div")[0]
+    divtop.addEventListener("click", function () {
+        let timer = setInterval(() => {
+            // 获取滚动条高度
+            let wTop = document.documentElement.scrollTop || document.body.scrollTop;
+            // 上升速度
+            let speed = Math.floor(-wTop / 3)
+            // 上升过程中逐步获取滚动条高度
+            document.documentElement.scrollTop = document.body.scrollTop = wTop + speed;
+            // 到顶部时.停止
+            if (wTop === 0) {
+                clearInterval(timer)
+            }
+        }, 30)
+    })
+
+    /*自动回到顶部*/
+    scrollToptimer = setInterval(function () {
+        console.log("定时循环回到顶部")
+        var top = document.body.scrollTop || document.documentElement.scrollTop;
+        var speed = top / 4;
+        if (document.body.scrollTop != 0) {
+            document.body.scrollTop -= speed;
+        } else {
+            document.documentElement.scrollTop -= speed;
+        }
+        if (top == 0) {
+            clearInterval(scrollToptimer);
+        }
+    }, 30);
+
+
+    /*顶部滑动*/
+    $(document).ready(function () {
+
+        $("#bar").hover(function () {
+            $(".slider").css("left", "14%");
+        })
+        $("#bar").mouseleave(function () {
+            $(".slider").css("left", "62%");
+        })
+
+        $("#bar1").hover(function () {
+            $(".slider").css("left", "26%");
+        })
+        $("#bar1").mouseleave(function () {
+            $(".slider").css("left", "62%");
+        })
+
+        $("#bar2").hover(function () {
+            $(".slider").css("left", "38%");
+
+        })
+        $("#bar2").mouseleave(function () {
+            $(".slider").css("left", "62%");
+
+        })
+
+        $("#bar3").hover(function () {
+            $(".slider").css("left", "50%");
+        })
+        $("#bar3").mouseleave(function () {
+            $(".slider").css("left", "62%");
+        })
+
+        $("#bar4").hover(function () {
+            $(".slider").css("left", "62%");
+        })
+        $("#bar4").mouseleave(function () {
+            $(".slider").css("left", "62%");
+        })
+        $("#bar5").hover(function () {
+            $(".slider").css("left", "74%");
+            $("#second5").show();
+        })
+        $("#bar5").mouseleave(function () {
+            $(".slider").css("left", "62%");
+            $("#second5").hide();
+        })
+    });
+
+
+</script>
+
+</body>
+
+</html>

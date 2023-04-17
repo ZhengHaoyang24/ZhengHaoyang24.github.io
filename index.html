@@ -17,6 +17,7 @@
 
 
 <body onload="parent.location='index.html#slider-span1' ">
+
     <div class="header">
         <div class="slider"></div>
         <!--slider1加一个属性就可以定在哪里-->
@@ -31,34 +32,27 @@
             <a href="页面/2.历代名医/index.html">
                 <div id="bar1">
                     <p>历代名医</p>
-
                     <div id="second1">
 
                     </div>
                 </div>
             </a>
-
         </div>
         <div class="header_tar">
-            <div id="bar2">
-                <p>医史传说</p>
-                <div id="second2">
-                    <ul>
-                        <a href="页面/3.医史传说/医史/index.html">
-                            <li>医史</li>
-                        </a>
-                        <a href="页面/3.医史传说/传说/index.html">
-                            <li>传说</li>
-                        </a>
-                    </ul>
+            <a href="页面/3.中医著作/index.html">
+                <div id="bar2">
+                    <p>中医著作</p>
+
+                    <div id="second2">
+
+                    </div>
                 </div>
-            </div>
-
+            </a>
         </div>
         <div class="header_tar">
-            <a href="页面/4.诗句民谣/index.html">
+            <a href="页面/4.非遗传承/index.html">
                 <div id="bar3">
-                    <p>诗句民谣</p>
+                    <p>非遗传承</p>
 
                     <div id="second3">
 
@@ -67,9 +61,9 @@
             </a>
         </div>
         <div class="header_tar">
-            <a href="页面/5.非遗传承/index.html">
+            <a href="页面/5.诗句民谣/index.html">
                 <div id="bar4">
-                    <p>非遗传承</p>
+                    <p>诗句民谣</p>
 
                     <div id="second4">
 
@@ -78,26 +72,26 @@
             </a>
         </div>
         <div class="header_tar">
-            <a href="页面/6.中医著作/index.html">
+            <a href="页面/6.趣味答题/ceshi.html">
                 <div id="bar5">
-                    <p>中医著作</p>
-
+                    <p>趣味答题</p>
                     <div id="second5">
-
                     </div>
                 </div>
             </a>
         </div>
+
+
+
+
 
     </div>
 
     <div class="content">
 
         <div class="bottom_button_div">
-            <a href="页面/测试/ceshi.html" title="测试"><div class="bottom_btn" id="bottom_btn1"><img src="页面/1.首页/imgs/测试1.png" alt="小测试"></div></a>
             <a href="页面/起始页/index.html" title="更多信息"><div class="bottom_btn" id="bottom_btn2" style="padding-top: 5px"><img src="页面/1.首页/imgs/关于1.png" alt="关于我们"></div></a>
         </div>
-
 
         <div style="width: 100%;height: 100%;">
             <div class="slide-container">
@@ -204,11 +198,9 @@
 
             $("#bar2").hover(function () {
                 $(".slider").css("left", "38%");
-                $("#second2").show();
             })
             $("#bar2").mouseleave(function () {
                 $(".slider").css("left", "14%");
-                $("#second2").hide();
             })
 
             $("#bar3").hover(function () {
@@ -226,9 +218,11 @@
             })
             $("#bar5").hover(function () {
                 $(".slider").css("left", "74%");
+                $("#second5").show();
             })
             $("#bar5").mouseleave(function () {
                 $(".slider").css("left", "14%");
+                $("#second5").hide();
             })
             // $("#button-1").click(function(){
             //     var title=$(".title");
