@@ -50,6 +50,7 @@
 .img:hover{
     width: 180px; 
     height: 210px;
-    box-shadow: 0 0 10px 10px rgba(199, 183, 94, 0.949);
+    /* box-shadow: 0 0 10px 10px rgba(199, 183, 94, 0.949); */
+    filter: drop-shadow( 0px 0px 20px rgba(199, 183, 94, 1));
 
 }

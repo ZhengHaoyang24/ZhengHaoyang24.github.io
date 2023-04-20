@@ -190,6 +190,14 @@
                 </div>
 
             </div>
+            <div v-if="submit" style="font-size: 1.2em;padding-top: 10px">
+                正确率：{{accuracy_end}}%
+                <div v-if="accuracy_end===100">你的中医药文化知识掌握很不错哦！</div>
+                <div v-else-if="accuracy_end>=60&&accuracy_end<90">表现不错，就差一点点满分啦！</div>
+                <div v-else>请继续努力哦！</div>
+
+            </div>
+
 
 
         </div>
@@ -206,6 +214,7 @@
     const dan_vm = new Vue({
         el: "#danxuan_app",
         data: {
+            accuracy_end:0,
             myAnswer: [0,0,0,0,0,0,0,0,0,0,0], //我的选择
             showAnswer: [],
             submit: false,  //提交情况
@@ -562,7 +571,26 @@
                 this.submit = true;
                 this.showAnswer = this.myAnswer
                 console.log("提交情况：" + this.submit)
+                console.log("我的答案：" + this.showAnswer)
+                this.accuracy();
+
+            },
+            accuracy() {
+                const accurate = [];
+                let a = 0;
+                console.log("我的答案：" + this.showAnswer)
+                for (let i = 0; i < 10; i++) {
+                    console.log("正确答案：" + this.problems[i].answer)
+                    accurate[i] = this.problems[i].answer;
+                }
+                for (let i = 0; i < 10; i++) {
+                    if (this.showAnswer[i+1]===accurate[i])
+                        a = a+1;
+                }
+                console.log("正确个数："+a)
+                this.accuracy_end=a*10;
             }
+
 
 
         }
