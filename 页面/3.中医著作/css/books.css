@@ -23,8 +23,9 @@
 }
 
 .book{
+
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     box-sizing: border-box;
     width: 50%;
     /* border: 1px solid black; */
@@ -49,27 +50,32 @@
 #text_bg_id{
     -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0));
 }
-#book2,#book4{
+#book2,#book4,#book6{
    margin-top: 15%;
 }
 .img{
     position: relative;
     user-select: none;
-    width: 70%;
-    height: 60%;
+    width: 75%;
+    height: 330px;
     margin-top: 30px;
     animation: move3 4s 1 ;
     animation-fill-mode:forwards;
+    left: 12%;
 
 }
 
+.position{
+    position: relative;
+}
 .book_left{
     top:-38px;
     position: absolute;
     background: url("../imgs/left.png");
     background-size: 100% 100%;
-    height: 56%;
+    height: 100%;
     width: 100%;
+    padding: 8% 0;
     animation: move1 1s 1 ease-in;
     animation-fill-mode:forwards;
 }
@@ -78,8 +84,9 @@
     background: url("../imgs/right.png");
     background-size: 100% 100%;
     position: absolute;
-    height: 56%;
+    height: 100%;
     width: 100%;
+    padding: 8% 0;
     animation: move2 1s 1 ease-in;
     animation-fill-mode:forwards;
 

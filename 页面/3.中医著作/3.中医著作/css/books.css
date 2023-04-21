@@ -1,0 +1,121 @@
+
+*{
+    scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "KaiTi";
+}
+
+.book_content{
+    width: 100%;
+    height: 100%;
+
+}
+.books{
+    overflow: hidden;
+    display: flex;
+    margin: 0 10%;
+    width: 80%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book{
+
+    position: relative;
+    /* text-align: center; */
+    box-sizing: border-box;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+.text_bg {
+    position: relative;
+    top: 25px;
+    background: url("../imgs/文字背景.jpg") no-repeat;
+    opacity: 0.8;
+    border-radius: 2%;
+    background-size: 100% 100%;
+    /* border: 1px solid black; */
+    margin: 30px 70px;
+    font-size: large;
+    text-indent: 2em;
+    height: 400px;
+    overflow: auto;
+    padding: 20px 20px;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
+}
+
+#text_bg_id{
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0));
+}
+#book2,#book4,#book6{
+   margin-top: 15%;
+}
+.img{
+    position: relative;
+    user-select: none;
+    width: 75%;
+    height: 330px;
+    margin-top: 30px;
+    animation: move3 4s 1 ;
+    animation-fill-mode:forwards;
+    left: 12%;
+
+}
+
+.position{
+    position: relative;
+}
+.book_left{
+    top:-38px;
+    position: absolute;
+    background: url("../imgs/left.png");
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    padding: 8% 0;
+    animation: move1 1s 1 ease-in;
+    animation-fill-mode:forwards;
+}
+.book_right{
+    top:-38px;
+    background: url("../imgs/right.png");
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 8% 0;
+    animation: move2 1s 1 ease-in;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes move1{
+    0%{
+        transform: rotateY(-90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+
+@keyframes move2{
+    0%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes move3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
