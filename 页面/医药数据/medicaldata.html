@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>医药数据</title>
+    <script src="js/echarts.min.js"></script>
+</head>
+<body>
+<div id="main" style="width: 60%;height: 300px"></div>
+
+
+
+<script>
+
+    var chartDom = document.getElementById('main');
+    var myChart = echarts.init(chartDom);
+    var option;
+
+    const colors = ['#5470C6', '#91CC75', '#EE6666'];
+    option = {
+        color: colors,
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross'
+            }
+        },
+        grid: {
+            right: '20%'
+        },
+        toolbox: {
+            feature: {
+                dataView: { show: true, readOnly: false },
+                restore: { show: true },
+                saveAsImage: { show: true }
+            }
+        },
+        legend: {
+            data: ['床位数', '增长速度']
+        },
+        xAxis: [
+            {
+                type: 'category',
+                axisTick: {
+                    alignWithLabel: true
+                },
+                // prettier-ignore
+                data: ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                name: 'Evaporation',
+                position: 'right',
+                alignTicks: true,
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                        color: colors[0]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value} ml'
+                }
+            },
+            {
+                type: 'value',
+                name: '床位数',
+                position: 'left',
+                alignTicks: true,
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                        color: colors[1]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value} °C'
+                }
+            }
+        ],
+        series: [
+            {
+                name: '床位数',
+                type: 'bar',
+                data: [
+                    79.4, 87.7, 95.8, 103.4, 113.6, 123.4, 132.9, 143.3
+                ]
+            },
+            {
+                name: '增长速度',
+                type: 'line',
+                yAxisIndex: 1,
+                data: [12.5, 10.5, 9.1, 7.9, 9.9, 8.7, 7.7, 7.8]
+            }
+        ]
+    };
+
+    option && myChart.setOption(option);
+
+
+</script>
+</body>
+</html>

@@ -5,42 +5,58 @@
 
 /*介绍div*/
 .introduce_content_img_div {
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 10px rgba(23, 23, 23, 0.44);
+    background: rgba(250, 235, 215, 0.13);
+    /*width: 80%;*/
+    /*margin-left: 10%;*/
 
     /*position: absolute;*/
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
     margin-top: 120px;
     margin-bottom: 100px;
-    display: flex;
-    justify-content: space-evenly;
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
+    padding: 40px;
     /*border: 1px red solid;*/
 }
 
 /*文字介绍外层div*/
 .introduce_text_div {
+    line-height: 30px;
+    font-size: 1.2em;
+    /*font-family: KaiTi, Times New Roman, serif;*/
+    margin-top: 10px;
     text-shadow: 1px 1px 2px black;
-    width: 88%;
+    width: 50%;
+    min-height: 230px;
     /*height: auto;*/
     /*width: 90%;*/
     cursor: default;
     color: #fae3ca;
 
-    background: rgba(250, 235, 215, 0.15);
+
     /*background: rgba(239, 154, 154, 0.15);*/
     border-radius: 20px;
     /*height: 700px;*/
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+
+    /*box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);*/
     transition-duration: 0.25s, 1s;
 
 }
 
+.form_table_div {
+
+    width: 45%;
+    height: auto;
+    border-left: 1px solid #ffe0be;
+}
+
 /*大标题*/
 .big_title {
-    /*font-family: KaiTi, Times New Roman, serif;*/
+    /*text-align: center;*/
+    font-family: KaiTi, Times New Roman, serif;
     color: #ffe0be;
     /*text-align: center;*/
     transition-duration: 0.25s, 1s;
@@ -48,7 +64,8 @@
 
 /*第一段文字*/
 .content_content_div_1 {
-    font-size: 1em;
+    line-height: 30px;
+    font-size: 1.2em;
     /*font-family: KaiTi, Times New Roman, serif;*/
     margin-top: 10px;
 }
@@ -91,6 +108,7 @@
     .introduce_image_div {
         display: none;
     }
+
     /*文字占满*/
     .introduce_text_div {
         width: 100%;
@@ -118,8 +136,11 @@
 .list_content {
     margin-left: 5%;
     margin-right: 5%;
-    padding: 50px;
-    box-shadow: 1px 1px 10px 10px rgba(23, 23, 23, 0.44);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 100px;
+    box-shadow: 1px 1px 10px 10px rgba(23, 23, 23, 0.33);
     background: rgba(250, 235, 215, 0.13);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -133,7 +154,12 @@
     border-bottom: 2px solid rgba(152, 125, 96, 0.3);
 }
 
-.list_content > h2 {
+.list_content:hover {
+    background: rgba(250, 235, 215, 0.16);
+}
+
+.list_content h2 {
+    margin-left: 26px;
     color: #d2c3b3;
     font-family: KaiTi, Times New Roman, serif;
 }
@@ -193,6 +219,18 @@
 
 }
 
+.li_update {
+    padding-bottom: 8px;
+    display: flex;
+    text-align: center;
+}
+
+.icon_image_ {
+    padding: 0;
+    width: 25px;
+    margin: 0;
+}
+
 .list_content_text > img {
     transition: all 0.2s;
     box-shadow: 1px 1px 10px 10px rgba(236, 184, 140, 0.2);
@@ -201,7 +239,7 @@
 
 /*图片放大*/
 .list_content:hover .list_content_text > img {
-    transform: scale(1.06, 1.06);
+    transform: scale(1.08, 1.08);
     transition: all 0.2s;
 }
 
@@ -273,14 +311,16 @@
     color: #3f3119;
     padding-bottom: 10px;
 }
-.detail_title>img{
+
+.detail_title > img {
     width: 30px;
 
 }
-.detail_text{
+
+.detail_text {
     line-height: 25px;
     padding-bottom: 20px;
-    text-shadow: 0 0  1px saddlebrown;
+    text-shadow: 0 0 1px saddlebrown;
     font-size: 1.1em;
     color: #3f3119;
 }

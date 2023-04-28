@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../../公共库/全局js/jquery-3.1.1.min.js"></script>
 
-<!--    <link href="css/custom.min.css" rel="stylesheet">-->
+    <script src="../../公共库/全局js/jquery-3.1.1.min.js"></script>
+    <script src="../../公共库/全局js/echarts.min.js"></script>
+
+    <!--    <link href="css/custom.min.css" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="../../公共库/全局css/css.css"/>
     <link rel="stylesheet" type="text/css" href="css/fycc.css"/>
     <link rel="stylesheet" type="text/css" href="../../公共库/全局css/totop.css"/>
@@ -68,9 +70,9 @@
         </a>
     </div>
     <div class="header_tar">
-        <a href="../6.趣味答题/ceshi.html">
+        <a href="../6.民族文化/mingzuwenhua.html">
             <div id="bar5">
-                <p>趣味答题</p>
+                <p>民族文化</p>
                 <div id="second5">
                 </div>
             </div>
@@ -87,20 +89,23 @@
     <!--介绍外层div-->
     <div class="introduce_content_img_div">
         <!--文字介绍-->
-        <div class="introduce_text_div">
-            <h1 class="big_title">中医药非物质文化遗产总体情况</h1>
-            <div class="content_content_div_1">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                中医药是我国珍贵的非物质文化遗产，2011年6月1日，《中华人民共和国非物质文化遗产法》正式实施，明确将传统医药归入非物质文化遗产的范畴，并提出了一系列对于非物质文化遗产保护的法律规定。
-                《中医药发展战略规划纲要（2016—2030年）》（国发[2016]15号）重要文件更要求“加强中医药文物设施保护和非物质文化遗产传承，推动更多非
-                药物中医诊疗技术列入联合国教科文组织非物质文化遗产名录和国家级非物质文化遗产目录。”我国政府一系列重要法律、文件表明了对中医药非物质文化遗产保护工作的高度重视，并对保护工作提出了要求。
-                2006年传统医药作为第九大类进入了国家级非物质文化遗产保护名录，截止2018年9月，国家名录发布四批，中医药项目已有130项入选。
-                另有131位传承人被认定为国家级代表性传承人（具体见附表）。2010年“中医针灸”项目列入联合国教科文组织“人类非物质文化遗产代表作名录”。
-                另外，全国31个省市自治区（不含港澳台地区）分别发布了3-6批名录项目和传承人，各省份都有省级传统医药医药项目和传承人，数百项传统医药项目入选。
-            </div>
-        </div>
-    </div>
+        <h1 class="big_title">中医药非物质文化遗产总体情况</h1>
+        <div style="display: flex;justify-content: space-between;padding-top: 30px">
+            <div class="introduce_text_div">
 
+                <!--                <div class="content_content_div_1">-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                中医药是我国珍贵的非物质文化遗产。
+                《中医药发展战略规划纲要（2016—2030年）》重要文件更要求“加强中医药文物设施保护和非物质文化遗产传承，推动更多非
+                药物中医诊疗技术列入联合国教科文组织非物质文化遗产名录和国家级非物质文化遗产目录。
+                2006年传统医药作为第九大类进入了国家级非物质文化遗产保护名录，截止2018年9月，国家名录发布四批，中医药项目已有130项入选。
+                <!--                </div>-->
+            </div>
+            <div id="form_table" class="form_table_div"></div>
+        </div>
+
+
+    </div>
 
 
     <!--条例-->
@@ -111,18 +116,75 @@
                 <h2>— 针灸 —</h2>
                 <div class="list_content_text">
                     <ul>
-                        <li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/时间.png" alt="">
+                            &nbsp;
                             时间：2006年
                         </li>
-                        <li>类别：传统医药</li>
-                        <li>地区：中央</li>
-                        <li>编号：Ⅸ-5</li>
-                        <li>申报地区或单位：中国中医科学院 中国针灸学会</li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/类别-线.png" alt="">
+                            &nbsp;
+                            类别：传统医药
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/地区.png" alt="">
+                            &nbsp;
+                            地区：中央
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/编号.png" alt="">
+                            &nbsp;
+                            编号：Ⅸ-5
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/施工单位.png" alt="">
+                            &nbsp;
+                            申报地区或单位：中国中医科学院 中国针灸学会
+                        </li>
                     </ul>
                     <img src="imgs/针灸2.png">
                 </div>
             </div>
         </a>
+
+
+        <a href="detailpage/index_detail_3.html" title="点击了解">
+            <div class="list_content">
+                <p></p>
+                <h2>— 中医传统制剂方法 —</h2>
+                <div class="list_content_text">
+
+                    <ul>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/时间.png" alt="">
+                            &nbsp;
+                            时间：2006年
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/类别-线.png" alt="">
+                            &nbsp;
+                            类别：传统医药
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/地区.png" alt="">
+                            &nbsp;
+                            地区：中央
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/编号.png" alt="">
+                            &nbsp;
+                            编号：Ⅸ-4
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/施工单位.png" alt="">
+                            &nbsp;
+                            申报地区或单位：中国中医科学院 中国中药协会
+                        </li>
+                    </ul>
+                    <img src="imgs/制剂2.png">
+                </div>
+            </div>
+        <a/>
 
         <!--第二-->
         <a href="detailpage/index_detail_2.html" title="点击了解">
@@ -131,13 +193,31 @@
                 <h2>— 中药炮制技术 —</h2>
                 <div class="list_content_text">
                     <ul>
-                        <li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/时间.png" alt="">
+                            &nbsp;
                             时间：2006年
                         </li>
-                        <li>类别：传统医药</li>
-                        <li>地区：中央</li>
-                        <li>编号：Ⅸ-3</li>
-                        <li>申报地区或单位：中国中医科学院 中国中药协会</li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/类别-线.png" alt="">
+                            &nbsp;
+                            类别：传统医药
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/地区.png" alt="">
+                            &nbsp;
+                            地区：中央
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/编号.png" alt="">
+                            &nbsp;
+                            编号：Ⅸ-3
+                        </li>
+                        <li class="li_update">
+                            <img class="icon_image_" style="" src="imgs/施工单位.png" alt="">
+                            &nbsp;
+                            申报地区或单位：中国中医科学院 中国中药协会
+                        </li>
                     </ul>
                     <img src="imgs/中药2.png">
                 </div>
@@ -145,47 +225,46 @@
         </a>
 
         <!--第三-->
-        <a href="detailpage/index_detail_3.html" title="点击了解">
-            <div class="list_content">
-                <p></p>
-                <h2>— 中医传统制剂方法 —</h2>
-                <div class="list_content_text">
-                    <ul>
-                        <li>
-                            时间：2006年
-                        </li>
-                        <li>类别：传统医药</li>
-                        <li>地区：中央</li>
-                        <li>编号：Ⅸ-4</li>
-                        <li>申报地区或单位：中国中医科学院 中国中药协会</li>
-                    </ul>
-                    <img src="imgs/制剂2.png">
-                </div>
-            </div>
-        <a/>
+
 
             <!--第四-->
-            <a href="detailpage/index_detail_4.html" title="点击了解">
-                <div class="list_content">
+        <a href="detailpage/index_detail_4.html" title="点击了解">
+            <div class="list_content">
                     <p></p>
                     <h2>— 中医诊法 —</h2>
                     <div class="list_content_text">
                         <ul>
-                            <li>
+                            <li class="li_update">
+                                <img class="icon_image_" style="" src="imgs/时间.png" alt="">
+                                &nbsp;
                                 时间：2006年
                             </li>
-                            <li>类别：传统医药</li>
-                            <li>地区：中央</li>
-                            <li>编号：Ⅸ-4</li>
-                            <li>申报地区或单位：中国中医科学院</li>
+                            <li class="li_update">
+                                <img class="icon_image_" style="" src="imgs/类别-线.png" alt="">
+                                &nbsp;
+                                类别：传统医药
+                            </li>
+                            <li class="li_update">
+                                <img class="icon_image_" style="" src="imgs/地区.png" alt="">
+                                &nbsp;
+                                地区：中央
+                            </li>
+                            <li class="li_update">
+                                <img class="icon_image_" style="" src="imgs/编号.png" alt="">
+                                &nbsp;
+                                编号：Ⅸ-2
+                            </li>
+                            <li class="li_update">
+                                <img class="icon_image_" style="" src="imgs/施工单位.png" alt="">
+                                &nbsp;
+                                申报地区或单位：中国中医科学院
+                            </li>
                         </ul>
                         <img src="imgs/中医诊法4.jpg">
                     </div>
                 </div>
             </a>
-        </div>
-
-
+    </div>
 
 
     <!--回到顶部-->
@@ -303,11 +382,130 @@
     });
 
 
-
-
-
 </script>
 
+
+<script type="text/javascript">
+    var dom = document.getElementById('form_table');
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+        title: {
+            textStyle: {
+                color: '#fddebd'
+            },
+            text: '国家级项目分类统计图',
+            left: '40%',
+        },
+        textStyle: {
+            color: '#fddebd'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {},
+        grid: {
+            // color: 7,
+            top: '15%',
+            left: '10%',
+            right: '4%',
+            bottom: '0%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'value', boundaryGap: [0, 0.1],
+        },
+        yAxis: {
+            type: 'category',
+            data: [
+                {
+                    value: '中医诊疗方法',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                },
+                {
+                    value: '中医对生命疾病认知',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                },
+                {
+                    value: '中药炮制技艺',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                },
+                {
+                    value: '中医传统制剂方法',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                },
+                {
+                    value: '中医针灸',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                },
+                {
+                    value: '中医养身',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                },
+                {
+                    value: '老字号中医文化',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                },
+                {
+                    value: '民族医药',
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fddebd'
+                    }
+                }
+            ]
+        },
+        series: [
+            {
+                color: '#fdd69f',
+                textStyle: {
+                    fontSize: 18,
+                },
+                // name: '2011',
+                type: 'bar',
+                data: [33, 1, 6, 32, 4, 3, 7, 44]
+            }
+        ]
+    };
+
+    option && myChart.setOption(option);
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+</script>
 
 
 </body>

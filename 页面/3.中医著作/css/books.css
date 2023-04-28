@@ -55,14 +55,15 @@
 }
 .img{
     position: relative;
+    top:10px;
     user-select: none;
     width: 75%;
     height: 330px;
-    margin-top: 30px;
     animation: move3 4s 1 ;
     animation-fill-mode:forwards;
-    left: 12%;
-
+    display: block;
+    margin: 0 auto;
+    line-height: 330px;
 }
 
 .position{

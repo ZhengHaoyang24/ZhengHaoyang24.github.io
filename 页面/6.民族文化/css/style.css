@@ -1,0 +1,256 @@
+
+
+
+* {
+
+    margin: 0px;
+}
+
+.Allcard {
+    user-select: none;
+
+    display: flex;
+    /*height: 80%;*/
+    width: 86%;
+    margin-left: 7%;
+    justify-content: space-around;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    margin-top: 5%;
+    position: relative;
+    width:253px;
+    height: 440px;
+    border-radius: 20px;
+    /*透明背景*/
+    background-color: rgba(183, 165, 137, 0.67);
+    opacity: 0.9;
+    overflow: hidden;
+    /*box-shadow:0 0 20px 5px rgba(0, 0, 0, 0.83);*/
+    box-shadow:0 0  10px rgba(229, 229, 229, 0.84) inset,0 0 20px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.container .card1:before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6e3d0f;
+
+    /*遮罩*/
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9d4e15;
+    /*遮罩*/
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container .card3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffc791;
+    /*遮罩*/
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container .card4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #ffe3c8;
+    /*遮罩*/
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+    transition: 0.5s ease-in-out;
+}
+
+
+.container .card:after {
+    position: absolute;
+    top: 30%;
+    left:-50%;
+    font-size: 14em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.41);
+}
+
+.container .card1:after{
+    margin-left: 50px;
+    content: '藏';
+    /*text-shadow: 1px 1px 2px black;*/
+    color: rgba(255, 255, 255, 0.21);
+}
+.container .card2:after{
+    margin-left: 50px;
+    content: '苗';
+    /*text-shadow: 1px 1px 2px black;*/
+    color: rgba(255, 255, 255, 0.21);
+}
+.container .card3:after{
+    margin-left: 50px;
+    content: '傣族';
+    /*text-shadow: 1px 1px 2px black;*/
+    color: rgba(255, 255, 255, 0.21);
+}
+.container .card4:after{
+    margin-left: 50px;
+    content: '维';
+    /*text-shadow: 1px 1px 2px black;*/
+    color: rgba(255, 255, 255, 0.21);
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+    top: 0;
+    transform: translateY(5%);
+}
+
+
+.container .card .imgBx img {
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.87));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 210px;
+    transform: translate(-50%, -50%) rotateY(180deg) rotate(0deg);
+
+}
+
+#miaozu{
+    width: 160px;
+}
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+
+.container .card .contentBx .text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .card:hover .contentBx .text{
+    opacity: 1;
+    transition-delay: 0.3s;
+
+}
+
+
+
+.container .card .contentBx h2 {
+    cursor: default;
+    position: relative;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1.8em;
+    color: #1e1300;
+    opacity: 0.8;
+    font-family: "kaiti", serif;
+    text-shadow:1px 1px 1px  black;
+
+
+}
+
+
+
+.container .card .contentBx .text span {
+    /*width: 100%;*/
+    /*height: 90px;*/
+    font-size: 20px;
+    padding: 10px;
+    /*line-height: 90px;*/
+    text-align: center;
+    display: inline-block;
+    font-family: 'kaiti', serif;
+    margin: 0 20px;
+    transition: 0.5s;
+    cursor: default;
+    border-radius: 5%;
+}
+.span_01{
+    background-color: rgb(79, 57, 35);
+    color: #ffffff;
+}
+
+
+/* .container .card .contentBx .size span:hover {
+    background: #9bdc28;
+} */
+
+.container .card .contentBx a {
+    display:  inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    color:  #111;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.container .card:hover .contentBx a{
+    opacity:1;
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+}

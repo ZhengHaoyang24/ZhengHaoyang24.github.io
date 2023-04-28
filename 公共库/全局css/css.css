@@ -25,6 +25,7 @@
 .header_tar {
 
 
+
     /*font-family: "Script MT Bold"!important;*/
     position: relative;
     z-index: 999;
@@ -37,6 +38,7 @@
 
 #bar, #bar1, #bar2, #bar3, #bar4, #bar5 {
     margin: 20px 0px;
+    font-size: 1.2em;
 
     /* background-color: white; */
 }
@@ -138,7 +140,8 @@
 
 body {
     align-items: center;
-    background: linear-gradient(rgba(45, 28, 16, 0.75), rgba(115, 97, 66, 0.19)), url('../全局imgs/清明上河图卷全局背景.jpg'), no-repeat;
+    background: linear-gradient(rgba(45, 28, 16, 0.58), rgba(115, 97, 66, 0.19)), url('../全局imgs/清明上河图卷全局背景.jpg'), no-repeat;
+    /*background: linear-gradient(rgba(45, 28, 16, 0.56), rgba(115, 97, 66, 0)), url('../全局imgs/清明上河图卷全局背景.jpg'), no-repeat;*/
     background-attachment: fixed;
     background-size: cover;
 }

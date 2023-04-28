@@ -1,25 +1,84 @@
 .bottom_button_div {
+    display: flex;
+    z-index: 9999;
+    transition-property: width, background;
+    transition-duration: .25s, 1s;
+    transition-timing-function: ease;
     /*background-color: #d2c3b3;*/
-    padding: 5px;
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    width: 45px;
+    height: 50px;
     bottom: 25px;
     left: 25px;
     position: absolute;
     border-radius: 5px;
     background-color: rgba(210, 195, 179, 0.39);
 }
+.bottom_button_div:hover{
+    width: 150px;
+    /*background-color: blue;*/
+}
 
 .bottom_btn{
+    align-items:flex-start;
     width: auto;
 }
 .bottom_btn img{
-    width: 40px;
+    width:40px;
+    height: 40px;
+
     transition:  all 0.2s;
     opacity: 0.7;
 }
-.bottom_btn img:hover{
+.right_hover_div{
+    padding-left: 10px;
+
+    border-left: 1px solid rgba(255, 228, 196, 0.6);
+    margin-left: 10px;
+    /*border: 1px solid red;*/
+    display: none;
+}
+.bottom_button_div:hover .right_hover_div{
+    display: flex;
+    /*line-height: 50px;*/
+    /*justify-content: center;*/
+    align-content: center;
+    align-items: center;
+    transition:  all 0.2s;
+    animation: fadenum 0.8s 1;
+}
+.a_{
+    padding-right: 8px;
+    margin-top: 5px;
+}
+.a_ img{
+    opacity: 0.8;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s;
+}
+.a_ img:hover{
+    transform: scale(1.08, 1.08);
+    transition: all 0.2s;
     opacity: 1;
+}
+
+
+
+@keyframes fadenum {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+
+    }
 }
 
 
