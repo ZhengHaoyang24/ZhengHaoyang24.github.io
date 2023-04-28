@@ -17,72 +17,84 @@
 </head>
 
 <body>
-<div class="header">
-    <div class="slider slider5"></div>
-    <!--slider1加一个属性就可以定在哪里-->
-    <div class="header_tar">
-        <a href="../../index.html">
-            <div id="bar">
-                <p>首页</p>
-            </div>
-        </a>
-    </div>
-    <div class="header_tar">
-        <a href="../2.历代名医/index.html">
-            <div id="bar1">
-                <p>历代名医</p>
-                <div id="second1">
-
+    <div class="header ">
+        <div class="slider slider5"></div>
+        <!--slider1加一个属性就可以定在哪里-->
+        <div class="header_tar">
+            <a href="../../index.html">
+                <div id="bar">
+                    <p>首页</p>
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="header_tar">
-        <a href="../3.中医著作/index.html">
-            <div id="bar2">
-                <p>中医著作</p>
-                <div id="second2">
+            </a>
+        </div>
+        <div class="header_tar">
+            <a href="../../页面/2.历代名医/index.html">
+                <div id="bar1">
+                    <p>历代名医</p>
+                    <div id="second1">
+    
+                    </div>
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="header_tar">
-        <a href="../4.非遗传承/index.html">
-            <div id="bar3">
-                <p>非遗传承</p>
-
-                <div id="second3">
-
+            </a>
+        </div>
+        <div class="header_tar">
+            <a href="../../页面/3.中医著作/index.html">
+                <div id="bar2">
+                    <p>中医著作</p>
+    
+                    <div id="second2">
+    
+                    </div>
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="header_tar">
-        <a href="#">
-            <div id="bar4">
-                <p>诗句民谣</p>
-
-                <div id="second4">
-
+            </a>
+        </div>
+        <div class="header_tar">
+            <a href="../../页面/4.非遗传承/index.html">
+                <div id="bar3">
+                    <p>非遗传承</p>
+    
+                    <div id="second3">
+    
+                    </div>
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="header_tar">
-        <a href="../6.民族文化/mingzuwenhua.html">
-            <div id="bar5">
-                <p>民族文化</p>
-                <div id="second5">
+            </a>
+        </div>
+        <div class="header_tar">
+            <a href="../../页面/5.诗句民谣/index.html">
+                <div id="bar4">
+                    <p>诗句民谣</p>
+    
+                    <div id="second4">
+    
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
+        <div class="header_tar">
+            <a href="../../页面/6.民族文化/mingzuwenhua.html">
+                <div id="bar5">
+                    <p>民族医药</p>
+                    <div id="second5">
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class="header_tar">
+            <a href="../../页面/趣味答题/ceshi.html">
+                <div id="bar6">
+                    <p>趣味答题</p>
+                    <div id="second6">
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+    
+    
+    
+    
     </div>
-
-
-
-
-
-</div>
 <div class="content">
     <!--三条导航栏-->
     <div class="navi_poem_div">
@@ -494,49 +506,51 @@
     $(document).ready(function () {
 
         $("#bar").hover(function () {
-            $(".slider").css("left", "14%");
-        })
-        $("#bar").mouseleave(function () {
-            $(".slider").css("left", "62%");
-        })
+                $(".slider").css("left", "9%");
+            })
+            $("#bar").mouseleave(function () {
+                $(".slider").css("left", "57%");
+            })
 
-        $("#bar1").hover(function () {
-            $(".slider").css("left", "26%");
-        })
-        $("#bar1").mouseleave(function () {
-            $(".slider").css("left", "62%");
-        })
+            $("#bar1").hover(function () {
+                $(".slider").css("left", "21%");
+            })
+            $("#bar1").mouseleave(function () {
+                $(".slider").css("left", "57%");
+            })
 
-        $("#bar2").hover(function () {
-            $(".slider").css("left", "38%");
+            $("#bar2").hover(function () {
+                $(".slider").css("left", "33%");
+            })
+            $("#bar2").mouseleave(function () {
+                $(".slider").css("left", "57%");
+            })
 
-        })
-        $("#bar2").mouseleave(function () {
-            $(".slider").css("left", "62%");
+            $("#bar3").hover(function () {
+                $(".slider").css("left", "45%");
+            })
+            $("#bar3").mouseleave(function () {
+                $(".slider").css("left", "57%");
+            })
 
-        })
-
-        $("#bar3").hover(function () {
-            $(".slider").css("left", "50%");
-        })
-        $("#bar3").mouseleave(function () {
-            $(".slider").css("left", "62%");
-        })
-
-        $("#bar4").hover(function () {
-            $(".slider").css("left", "62%");
-        })
-        $("#bar4").mouseleave(function () {
-            $(".slider").css("left", "62%");
-        })
-        $("#bar5").hover(function () {
-            $(".slider").css("left", "74%");
-            $("#second5").show();
-        })
-        $("#bar5").mouseleave(function () {
-            $(".slider").css("left", "62%");
-            $("#second5").hide();
-        })
+            $("#bar4").hover(function () {
+                $(".slider").css("left", "57%");
+            })
+            $("#bar4").mouseleave(function () {
+                $(".slider").css("left", "57%");
+            })
+            $("#bar5").hover(function () {
+                $(".slider").css("left", "69%");
+            })
+            $("#bar5").mouseleave(function () {
+                $(".slider").css("left", "57%");
+            })
+            $("#bar6").hover(function () {
+                $(".slider").css("left", "81%");
+            })
+            $("#bar6").mouseleave(function () {
+                $(".slider").css("left", "57%");
+            })
     });
 
 

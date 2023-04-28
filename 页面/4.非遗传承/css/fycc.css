@@ -159,6 +159,7 @@
 }
 
 .list_content h2 {
+    font-size: 2em;
     margin-left: 26px;
     color: #d2c3b3;
     font-family: KaiTi, Times New Roman, serif;
@@ -210,7 +211,7 @@
 .list_content_text {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2em;
+    font-size: 1.4em;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e7d7c6;

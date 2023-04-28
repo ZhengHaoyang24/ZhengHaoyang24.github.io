@@ -234,23 +234,43 @@
     background: #9bdc28;
 } */
 
-.container .card .contentBx a {
+.container .card .contentBx a{
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
     display:  inline-block;
-    background-color: #fff;
-    padding: 10px 20px;
+    width: 40%;
+    padding: 2px 5px;
+background-color: #ffffff;
     color:  #111;
     border-radius: 4px;
     margin-top: 10px;
     text-decoration: none;
     font-weight: 600;
-    opacity: 0;
+    opacity: 0.8;
     transform: translateY(50px);
     transition: 0.5s;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: "kaiti";
+    box-shadow: 0 0 5px 7px rgba(0, 0, 0, 0.23);
 }
+
+.container .card .contentBx a img{
+    width: 20px;
+    height: 20px;
+    opacity: 0.9;
+    vertical-align: middle;
+}
+
+
 
 .container .card:hover .contentBx a{
     opacity:1;
     transform: translateY(0px);
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
+}
+
+.container .card .contentBx a:hover{
+    background-color: #e5d5c3;
+    transition: all 0.3s;
 }

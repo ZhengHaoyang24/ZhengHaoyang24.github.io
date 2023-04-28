@@ -18,7 +18,7 @@
     background-color: rgba(210, 195, 179, 0.39);
 }
 .bottom_button_div:hover{
-    width: 150px;
+    width: 110px;
     /*background-color: blue;*/
 }
 
@@ -34,10 +34,11 @@
     opacity: 0.7;
 }
 .right_hover_div{
+    margin-left: 10px;
     padding-left: 10px;
 
     border-left: 1px solid rgba(255, 228, 196, 0.6);
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     /*border: 1px solid red;*/
     display: none;
 }
@@ -51,7 +52,7 @@
     animation: fadenum 0.8s 1;
 }
 .a_{
-    padding-right: 8px;
+    padding-right: 5px;
     margin-top: 5px;
 }
 .a_ img{

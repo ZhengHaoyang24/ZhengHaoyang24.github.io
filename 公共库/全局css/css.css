@@ -36,14 +36,14 @@
     text-align: center;
 }
 
-#bar, #bar1, #bar2, #bar3, #bar4, #bar5 {
+#bar, #bar1, #bar2, #bar3, #bar4, #bar5,#bar6 {
     margin: 20px 0px;
     font-size: 1.2em;
 
     /* background-color: white; */
 }
 
-#second, #second1, #second2, #second3, #second4, #second5 {
+#second, #second1, #second2, #second3, #second4, #second5 ,#second6{
     background-color: rgba(166, 142, 109, 0.5);
     display: none;
     position: absolute;
@@ -100,12 +100,12 @@
     background-color: rgb(149, 134, 108);
 } */
 .slider {
-    margin: 20px 0;
+    margin: 22px 0;
     border-radius: 7%;
     padding: 20px 0;
     position: absolute;
-    width: 12%;
-    left: 14%;
+    width: 10%;
+    left: 9%;
     background-color: rgba(166, 142, 109, 0.5);
     transition: all ease 0.4s;
     animation: 2s ease-in-out infinite;
@@ -113,25 +113,27 @@
 }
 
 .slider2 {
-    left: 26%;
+    left: 21%;
 }
 
 .slider3 {
-    left: 38%;
+    left: 33%;
 }
 
 .slider4 {
-    left: 50%;
+    left: 45%;
 }
 
 .slider5 {
-    left: 62%;
+    left: 57%;
 }
 
 .slider6 {
-    left: 74%;
+    left: 69%;
 }
-
+.slider7 {
+    left: 81%;
+}
 .content {
     position: absolute;
     width: 100%;
@@ -146,7 +148,4 @@ body {
     background-size: cover;
 }
 
-
-/*内嵌页导航*/
-.
 
